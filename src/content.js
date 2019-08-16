@@ -1,5 +1,8 @@
 function keywordsHighlighter(options, remove) {
 	var occurrences = 0;
+	// Based on "highlight: JavaScript text higlighting jQuery plugin" by Johann Burkard.
+	// http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html
+	// MIT license.
 	function highlight(node, pos, keyword, options) {
 		var span = document.createElement("span");
 		span.className = "highlighted";
